@@ -19,7 +19,9 @@ phases:
 
   build:
     commands:
-      # Building.....
+      - echo Testing project....... 
+      - npm test
+      - echo Building project.......
       - npm run build
 artifacts:
   # include all files required to run application

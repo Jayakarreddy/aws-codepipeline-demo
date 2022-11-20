@@ -13,7 +13,7 @@ export default function Counter() {
     
     return (
         <div>
-            <h1>Counter</h1>
+            <h1>Counter App</h1>
             <button data-testid="decrement" onClick={handleDecrement}>-</button>
             <h3 data-testid="count">{count}</h3>
             <button data-testid="increment" onClick={handleIncrement}>+</button>
