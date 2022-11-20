@@ -19,8 +19,6 @@ phases:
     commands:
       - echo Building project.......
       - npm run build
-      - echo Testing..... 
-      - npm test
 artifacts:
   # include all files required to run application
   # we include only the static build files
