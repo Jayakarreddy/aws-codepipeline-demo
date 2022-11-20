@@ -3,21 +3,22 @@ version: 0.2
 phases: 
   install:
    runtime-versions:
-      - Installing Node 18......
+      # Installing Node 18......
       nodejs: 18
     commands:
-      - Installing NPM......
+      # Installing NPM......
       - npm install
       # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       # - apt install -y nodejs
   build:
     commands:
-      - Testing..... 
+      # Testing..... 
       - npm test
-      - Building.....
+      # Building.....
       - npm run build
 artifacts:
+  # include all files required to run application
+  # we include only the static build files
   files:
     - "**/*"
-  discard-paths: no
-  base-directory: public
+  base-directory: build
