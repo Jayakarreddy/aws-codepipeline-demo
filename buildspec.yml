@@ -1,7 +1,7 @@
 version: 0.2
 
 phases: 
-  pre_build:
+  install:
     commands:
       - echo Installing Nodejs 18+.....
       - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
@@ -14,6 +14,8 @@ phases:
       # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       # - apt install -y nodejs
 
+      # - echo Testing..... 
+      # - npm test
 
   build:
     commands:
