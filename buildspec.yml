@@ -2,8 +2,10 @@ version: 0.2
 
 phases: 
   install:
-    runtime-versions:
-      nodejs: 18
+    commands:
+      - echo installing Nodejs 18+.....
+      - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+      - apt install -y nodejs
 
   pre_build:
     commands:
