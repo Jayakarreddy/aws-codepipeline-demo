@@ -1,7 +1,7 @@
 version: 0.2
 
 phases: 
-  pre-build:
+  pre_build:
     commands:
       # Installing NPM......
       - npm install
@@ -20,4 +20,5 @@ artifacts:
   # we include only the static build files
   files:
     - "**/*"
+  discard-paths: no
   base-directory: build
