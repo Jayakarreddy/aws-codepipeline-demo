@@ -14,7 +14,7 @@ phases:
       # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       # - apt install -y nodejs
 
-      Testing..... 
+      - echo Testing..... 
       - npm test
 
   build:
