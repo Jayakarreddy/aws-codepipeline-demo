@@ -1,16 +1,20 @@
 version: 0.2
 
 phases: 
+  install:
+    runtime-versions:
+      nodejs: 18
+
   pre_build:
     commands:
-      # Installing NPM......
+      # Installing NPM dependencies......
       - npm install
       # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       # - apt install -y nodejs
-      # runtime-versions:
-      # nodejs: 18
+
       # Testing..... 
       - npm test
+
   build:
     commands:
       # Building.....
