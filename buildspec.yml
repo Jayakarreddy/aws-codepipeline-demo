@@ -1,26 +1,26 @@
 version: 0.2
 
 phases: 
-  install:
+  pre_build:
     commands:
       - echo Installing Nodejs 18+.....
       - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       - apt install -y nodejs
       # - npm install
 
-  pre_build:
-    commands:
+  # pre_build:
+  #   commands:
       # Installing NPM dependencies......
       # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
       # - apt install -y nodejs
 
-      - echo Testing..... 
-      - npm test
 
   build:
     commands:
       - echo Building project.......
       - npm run build
+      - echo Testing..... 
+      - npm test
 artifacts:
   # include all files required to run application
   # we include only the static build files
