@@ -4,9 +4,9 @@ phases:
   install:
     commands:
       - echo Installing Nodejs 18+.....
-      - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-      - apt install -y nodejs
-      # - npm install
+      # - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+      # - apt install -y nodejs
+      - npm install
 
   # pre_build:
   #   commands:
